@@ -1,4 +1,11 @@
-export const urls = [{
+export const urls = [
+  {
+  url: "https://math.stackexchange.com/",
+  title: "Math Stack Exchange, questions and answers",
+  seeded: false,
+  loading: false,
+  },
+{
   url: "https://e360.yale.edu/digest/indonesia-malaysia-deforestation",
   title: "Indonesia Deforestation",
   seeded: false,
