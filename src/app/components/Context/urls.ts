@@ -1,7 +1,7 @@
 export const urls = [
   {
-  url: "https://math.stackexchange.com/",
-  title: "Math Stack Exchange, questions and answers",
+  url: "http://www.calculus.org/",
+  title: "Mathematics and Calculus",
   seeded: false,
   loading: false,
   },
