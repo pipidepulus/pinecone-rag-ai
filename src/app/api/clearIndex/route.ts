@@ -12,7 +12,7 @@ export async function POST() {
   const namespace = index.namespace(namespaceName)
 
   // Delete everything within the namespace
-  await namespace.deleteAll();
+  //await namespace.deleteAll();
 
   return NextResponse.json({
     success: true
