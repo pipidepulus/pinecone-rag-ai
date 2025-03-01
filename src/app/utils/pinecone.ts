@@ -1,9 +1,10 @@
 import { Pinecone, type ScoredPineconeRecord } from "@pinecone-database/pinecone";
 
 export type Metadata = {
-  nombre_archivo: string,
-  fragmento_num: number,
-  total_fragmentos: number
+  url: string,
+  text: string,
+  chunk: string,
+  hash: string
 }
 
 // The function `getMatchesFromEmbeddings` is used to retrieve matches for the given embeddings
@@ -35,6 +36,7 @@ const getMatchesFromEmbeddings = async (embeddings: number[], topK: number, name
       topK,
       includeMetadata: true,
     })
+    console.log(queryResult.matches);
     return queryResult.matches || []
   } catch (e) {
     // Log the error and throw it

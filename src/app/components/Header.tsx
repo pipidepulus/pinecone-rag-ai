@@ -1,11 +1,21 @@
-import Image from 'next/image';
+import Image from "next/image";
+import PineconeLogo from "../../../public/eccel.svg";
+//import VercelLogo from "../../../public/vercel.svg";
 
 export default function Header({ className }: { className?: string }) {
   return (
-    <header className={`flex items-center justify-center text-gray-200 text-2xl ${className}`}>
-      <span style={{ marginRight: '10px' }}>A RAG AI bot made with </span>
-      <Image src="/pinecone.svg" alt="Logo" width={125} height={125} />
-      <span style={{ marginLeft: '10px' }}> @pipidepulus</span>
+    <header
+      className={`flex items-center justify-center text-gray-200 text-2xl ${className}`}
+    >
+      <Image
+        src={PineconeLogo}
+        alt="pinecone-logo"
+        width="230"
+        height="50"
+        className="ml-3"
+      />{" "}
+      <div className="text-4xl ml-3 mr-3"></div>
+      
     </header>
   );
 }
